@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "../../hero.ts";
+@source "../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-lumi-black: #1b212f;
+  --color-lumi-white: #fefffe;
+  --color-lumi-gradient-start: #286c96;
+  --color-lumi-gradient-end: #79bfe5;
+  --color-lumi-blue: #2e7bee;
+  --color-lumi-yellow: #ffe135;
+  --color-lumi-green: #71c32a;
+  --font-manrope: "Manrope", system-ui, sans-serif;
+  --font-sans: var(--font-manrope);
+}
+
+/* CSS Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
