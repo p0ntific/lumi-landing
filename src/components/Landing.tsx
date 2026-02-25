@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import {
@@ -150,6 +151,7 @@ function MagneticButton({
 
 export function Landing() {
     const containerRef = useRef(null);
+    const isDesktop = useMediaQuery("(min-width: 1024px)");
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end end"],
@@ -544,34 +546,28 @@ export function Landing() {
                 </RevealSection>
 
                 {/* Block 6: Bottom CTA с фото */}
-                <RevealSection className="mt-[80px] lg:mt-[160px]">
+                <RevealSection className="mt-[80px] lg:mt-[140px]">
                     <section className="w-full pt-4 pb-0">
                         <motion.div
-                            className="relative w-full aspect-[1/2] lg:aspect-[2.2/1] mx-auto rounded-3xl lg:rounded-[40px] overflow-hidden"
+                            className="relative w-full aspect-[1/2] lg:aspect-[2/1] mx-auto rounded-3xl overflow-hidden"
                             whileHover={{ scale: 1.01 }}
                             transition={{ duration: 0.4 }}
                         >
                             <Image
-                                src={bottomBg}
+                                src={isDesktop ? bottomBgDesktop : bottomBg}
                                 alt=""
                                 fill
-                                className="object-cover object-top lg:object-center block lg:hidden"
-                            />
-                            <Image
-                                src={bottomBgDesktop}
-                                alt=""
-                                fill
-                                className="object-cover object-top lg:object-center hidden lg:block"
+                                className="object-cover object-top lg:object-center"
                             />
                             <motion.div
-                                className="flex absolute bottom-[35px] lg:bottom-[60px] left-0 right-0 justify-center px-4"
+                                className="flex absolute bottom-[35px] lg:bottom-[50px] left-0 right-0 justify-center px-4"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.3 }}
                                 viewport={{ once: true }}
                             >
                                 <MagneticButton
-                                    className="w-full max-w-[320px] lg:max-w-[360px] font-semibold text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16 shadow-md"
+                                    className="w-full max-w-[320px] font-semibold text-base rounded-2xl min-h-14 shadow-md"
                                     style={{
                                         backgroundColor: LUMI_WHITE,
                                         color: LUMI_BLACK,
