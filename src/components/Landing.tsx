@@ -213,7 +213,7 @@ export function Landing() {
                             подходящих средств
                         </motion.p>
                         <motion.div
-                            className="mt-6 lg:mt-8 w-full max-w-[320px] lg:max-w-[360px]"
+                            className="mt-6 lg:mt-8 w-full min-w-[320px] max-w-[320px]"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
@@ -223,7 +223,7 @@ export function Landing() {
                             }}
                         >
                             <MagneticButton
-                                className="w-full font-medium text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                className="w-[320px] max-w-[320px] font-medium text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                 style={{
                                     backgroundColor: LUMI_BLACK,
                                     color: LUMI_WHITE,
@@ -274,9 +274,9 @@ export function Landing() {
                                 ненужные продукты, а покупать только самое
                                 необходимое и полезное для вашей кожи
                             </p>
-                            <div className="mt-6 lg:mt-8 w-full max-w-[320px] lg:max-w-[360px] hidden lg:block">
+                            <div className="mt-6 lg:mt-8 w-full max-w-[320px] hidden lg:block">
                                 <MagneticButton
-                                    className="w-full font-bold text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                    className="w-full max-w-[320px] font-bold text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                     style={{
                                         backgroundColor: LUMI_BLACK,
                                         color: LUMI_WHITE,
@@ -302,7 +302,7 @@ export function Landing() {
 
                         <div className="mt-6 w-full max-w-[320px] lg:hidden">
                             <MagneticButton
-                                className="w-full font-bold text-base rounded-2xl min-h-14"
+                                className="w-full max-w-[320px] font-bold text-base rounded-2xl min-h-14"
                                 style={{
                                     backgroundColor: LUMI_BLACK,
                                     color: LUMI_WHITE,
@@ -451,9 +451,9 @@ export function Landing() {
                                 </p>
                             </div>
 
-                            <div className="mt-4 lg:mt-10 w-full max-w-[320px] lg:max-w-[360px] mx-auto lg:mx-0">
+                            <div className="mt-4 lg:mt-10 w-full max-w-[320px] mx-auto lg:mx-0">
                                 <MagneticButton
-                                    className="w-full font-medium text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                    className="w-[320px] max-w-[320px] font-medium text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                     style={{
                                         backgroundColor: LUMI_BLACK,
                                         color: LUMI_WHITE,
@@ -531,9 +531,9 @@ export function Landing() {
                             ))}
                         </StaggerContainer>
 
-                        <div className="mt-6 lg:mt-12 w-full max-w-[320px] lg:max-w-[360px]">
+                        <div className="mt-6 lg:mt-12 w-full max-w-[320px]">
                             <MagneticButton
-                                className="w-full font-normal text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                className="w-full max-w-[320px] font-normal text-base lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                 style={{
                                     backgroundColor: LUMI_BLACK,
                                     color: LUMI_WHITE,
@@ -567,7 +567,7 @@ export function Landing() {
                                 viewport={{ once: true }}
                             >
                                 <MagneticButton
-                                    className="w-full max-w-[320px] font-semibold text-base rounded-2xl min-h-14 shadow-md"
+                                    className="w-[320px] min-w-[320px] max-w-[320px] font-semibold text-base rounded-2xl min-h-14 shadow-md"
                                     style={{
                                         backgroundColor: LUMI_WHITE,
                                         color: LUMI_BLACK,
@@ -595,7 +595,7 @@ export function Landing() {
                             transition={{ duration: 0.3 }}
                         >
                             <MagneticButton
-                                className="w-full font-semibold text-[16px] lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                className="w-full max-w-[320px] font-semibold text-[16px] lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                 style={{
                                     backgroundColor:
                                         "rgba(255, 255, 255, 0.25)",
@@ -606,7 +606,7 @@ export function Landing() {
                                 Тех. поддержка
                             </MagneticButton>
                             <MagneticButton
-                                className="w-full font-semibold text-[16px] lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
+                                className="w-full max-w-[320px] font-semibold text-[16px] lg:text-lg rounded-2xl min-h-14 lg:min-h-16"
                                 style={{
                                     backgroundColor:
                                         "rgba(255, 255, 255, 0.25)",
