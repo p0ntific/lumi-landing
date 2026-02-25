@@ -413,7 +413,7 @@ export function Landing() {
 
                         <div className="lg:flex-1 lg:order-1 lg:max-w-[500px]">
                             {/* Mobile: absolute overlay */}
-                            <div className="absolute lg:relative top-[40px] lg:top-0 left-0 right-0 pt-10 lg:pt-0 pb-4 px-6 lg:px-0 text-center lg:text-left flex-shrink-0">
+                            <div className="absolute lg:relative top-[40px] lg:top-0 left-0 right-0 pb-4 px-6 lg:px-0 text-center lg:text-left flex-shrink-0">
                                 <h2
                                     className="text-[26px] sm:text-[30px] lg:text-[40px] xl:text-[44px] font-medium"
                                     style={{ color: LUMI_WHITE }}
